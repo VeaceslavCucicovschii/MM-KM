@@ -1,4 +1,5 @@
 import { Button } from './components/button.js';
+import { Header } from './components/header.js';
 
 function Text() {
 	return (
@@ -10,11 +11,9 @@ function Text() {
 
 export default function App() {
 	return (
-		<section>
-			<div className='container flex gap-4'>
-				<Button text="search properties" />
-				<Button variant="secondary" text="hello world" />
-			</div>
-		</section>
+		<>
+			<Header />
+		</>
+
 	);
 }
