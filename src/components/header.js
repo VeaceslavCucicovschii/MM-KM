@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from './button.js';
+import { TextLink } from './textLink.js';
 
 import logo from '../images/logo.png';
 
@@ -14,14 +15,14 @@ export function Header() {
         <nav className="my-12 flex justify-center">
             <div className="container flex justify-between">
                 <a href=''>
-                    <img src={logo} className='h-fit'></img>
+                    <img src={logo} className='h-fit hover:opacity-90'></img>
                 </a>
                 <div className='flex items-center gap-16'>
                     <ul className='flex font-krub font-light gap-7'>
-                        <li><a href=''>Properties</a></li>
-                        <li><a href=''>Service</a></li>
-                        <li><a href=''>About Us</a></li>
-                        <li><a href=''>Contact</a></li>
+                        <li><TextLink text="Properties" /></li>
+                        <li><TextLink text="Service" /></li>
+                        <li><TextLink text="About Us" /></li>
+                        <li><TextLink text="Contact" /></li>
                     </ul>
                     <Button variant="secondary" text="get a consultation" />
                 </div>
