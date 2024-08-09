@@ -2,8 +2,6 @@ import button_cloud_img_1 from "../images/button_cloud_img_1.png"
 import button_cloud_img_2 from "../images/button_cloud_img_2.png"
 
 export function Button({ variant, text }) {
-
-
     if (variant === "secondary") {
         return (
             <button className="flex px-7 py-3 bg-transparent border text-gray-600 border-gray-600 duration-300 hover:bg-gray-600 hover:shadow-xl hover:text-white">
